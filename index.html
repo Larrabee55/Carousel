@@ -11,7 +11,7 @@
     $(document).ready(function () {
       $.getJSON('./products.json', function (data) {
         $.each(data, function (key, value) {
-          $.each(value, function (index, stuff) {
+          $.each(value, function (stuff) {
             html += '<div id="books">';
             html += '<h2 id="title"> hello' + stuff.title + '</h2>';
             html += '<h4> hello' + stuff.Author + '</h4>';
