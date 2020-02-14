@@ -7,7 +7,7 @@
 
 function bookinfo(t) {
     console.log(t);
-    var data_file = "products.json";
+    var data_file = "./products.json";
     var http_request = new XMLHttpRequest();
 
     try {
@@ -38,7 +38,7 @@ function bookinfo(t) {
             var text = "";
             for (var i = 0; i < jsonObj.book.length; i++) {
                 if (jsonObj.book[i].id == t) {
-                    text = text + jsonObj.book[i].Title + " " + jsonObj.book[i].Author + "<br>"+jsonObj.book[i].desc;
+                    text = text + jsonObj.book[i].Title + " " + jsonObj.book[i].Author + "<br>" + jsonObj.book[i].desc;
                     var selection = i;
                 }
 
