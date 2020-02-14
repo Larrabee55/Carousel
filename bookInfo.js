@@ -37,7 +37,7 @@ function bookinfo(t) {
             // be accessed as jsonObj.name and jsonObj.country.
             var text = "";
             for (var i = 0; i < jsonObj.book.length; i++) {
-                if (jsonObj.book[i].id == t) {
+                if (jsonObj.book[i].Source == t) {
                     text = text + jsonObj.book[i].Title + " " + jsonObj.book[i].Author + "<br>" + jsonObj.book[i].desc;
                     var selection = i;
                 }
