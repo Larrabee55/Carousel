@@ -13,7 +13,8 @@
     $(document).ready(function () {
       $.getJSON('./products.json', function (data) {
         $.each(data, function (key, value) {
-          $.each(value, function (stuff) {
+          $.each(value, function (index, stuff) {
+            console
             html += '<div id="book">';
             html += '<h2 id="title"> hello' + stuff.Title + '</h2>';
             html += '<h4> hello' + stuff.Author + '</h4>';
