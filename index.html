@@ -15,7 +15,7 @@
         $.each(data, function (key, value) {
           $.each(value, function (stuff) {
             html += '<div id="book">';
-            html += '<h2 id="title"> hello' + stuff.Title + '</h2>';
+            html += '<h2 id="title"> hello' + stuff[i].Title + '</h2>';
             html += '<h4> hello' + stuff.Author + '</h4>';
             html += '<p onclick="bookinfo()"><img src="' + stuff.Source + '" style="max-width:100%;max-height:100%;"></p></div>';
           });
