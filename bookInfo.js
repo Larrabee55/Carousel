@@ -5,8 +5,8 @@
  */
 
 
-function bookinfo() {
-    var t = document.getElementById("id")
+function bookinfo(t) {
+
     console.log(t);
 
     var data_file = "./products.json";
