@@ -5,10 +5,10 @@
  */
 
 
-function bookinfo(t) {
-
-
+function bookinfo() {
+    var t = document.getElementById("id")
     console.log(t);
+
     var data_file = "./products.json";
     var http_request = new XMLHttpRequest();
 
